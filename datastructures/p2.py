@@ -14,16 +14,17 @@ class Solution(object):
         list1 = []
         list2 = []
 
-        for i in y:
+        for i in y, reversed(y):
             list1.append(i)
-        for i in reversed(y):
-            list2.append(i) 
+            list2.append(i)
+ 
 
         if list1 == list2:
             return True
         else:
             return False
-        
+
+x = 121
 a = Solution()
-b = a.isPalindrome(121)
-print(b)
+b = a.isPalindrome(x)
+print(b) 
